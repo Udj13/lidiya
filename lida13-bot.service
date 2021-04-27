@@ -1,0 +1,10 @@
+[Unit]
+Description=LA_post_informer
+Wants=lida13-bot.timer
+
+[Service]
+Type=oneshot
+ExecStart=/myenv/lida13-bot/bin/python /myenv/lida13-bot/main.py
+
+[Install]
+WantedBy=multi-user.target
