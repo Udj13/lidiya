@@ -16,7 +16,7 @@ def main():
 
 
     def read_wall(name):
-        response = vk.wall.get(count=2, domain=name)  # Используем метод wall.get
+        response = vk.wall.get(count=4, domain=name)  # Используем метод wall.get
 
         if response['items']:
             for post in response['items']:
